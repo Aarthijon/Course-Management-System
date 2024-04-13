@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>Course Management System</h1>
+        
+    </div>
+    <div class="info">
+        <h2>New Course</h2>
+        <form id="courseForm">
+            <table id="courseTable" border="2">
+                <tr>
+                    <td>Course Name</td>
+                    <td><input id="courseNameInput" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Instructor</td>
+                    <td><input id="instructorInput" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td><textarea id="descriptionInput" rows="4"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="button" onclick="saveCourse()">Save Course</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <br>
+
+        <h2>New Student Enrollment</h2>
+        <form id="enrollmentForm">
+            <table id="enrollmentTable" border="2">
+                <tr>
+                    <td>Student Name</td>
+                    <td><input id="studentNameInput" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input id="studentEmailInput" type="email"></td>
+                </tr>
+                <tr>
+                    <td>Course</td>
+                    <td>
+                        <select id="courseSelect" name="course">
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="button" onclick="enrollStudent()">Enroll Student</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <br>
+
+        <h2>Course List</h2>
+        <table id="courseListTable" border="2">
+            <tr>
+                <td>Course Name</td>
+                <td>Instructor</td>
+                <td>Description</td>
+                <td>Action</td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
